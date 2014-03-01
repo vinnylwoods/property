@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Property</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- A default button-group with small buttons inside -->
+<ul class="button-group even-1">
+  <li><a href="/" class="button">Home</a></li>
+  <li><a href="/buildings/" class="button">Properties</a></li>
+  <li><a href="/" class="button">Tenants</a></li>
+  <li><a href="/" class="button">Rents</a></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>

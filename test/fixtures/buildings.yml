@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  flat_no: MyString
+  house_name: MyString
+  house_no: MyString
+  street: MyString
+  address: MyString
+  city: MyString
+  postcode: MyString
+  property_type_id: 1
+  no_of_beds: 1
+  building_materials: MyText
+  flat_roof: false
+  flat_roof_percentage: 1
+  additional_info: MyString
+  original_price: 9.99
+  purchase_date: 2014-02-24
+  rebuild_value: 9.99
+
+two:
+  flat_no: MyString
+  house_name: MyString
+  house_no: MyString
+  street: MyString
+  address: MyString
+  city: MyString
+  postcode: MyString
+  property_type_id: 1
+  no_of_beds: 1
+  building_materials: MyText
+  flat_roof: false
+  flat_roof_percentage: 1
+  additional_info: MyString
+  original_price: 9.99
+  purchase_date: 2014-02-24
+  rebuild_value: 9.99

@@ -1,0 +1,81 @@
+<%= form_for(@building) do |f| %>
+  <% if @building.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@building.errors.count, "error") %> prohibited this building from being saved:</h2>
+
+      <ul>
+      <% @building.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :flat_no %><br>
+    <%= f.text_field :flat_no %>
+  </div>
+  <div class="field">
+    <%= f.label :house_name %><br>
+    <%= f.text_field :house_name %>
+  </div>
+  <div class="field">
+    <%= f.label :house_no %><br>
+    <%= f.text_field :house_no %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :postcode %><br>
+    <%= f.text_field :postcode %>
+  </div>
+  <div class="field">
+    <%= f.label :property_type %><br>
+    <%= f.number_field :property_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :no_of_beds %><br>
+    <%= f.number_field :no_of_beds %>
+  </div>
+  <div class="field">
+    <%= f.label :building_materials %><br>
+    <%= f.text_area :building_materials %>
+  </div>
+  <div class="field">
+    <%= f.label :flat_roof %><br>
+    <%= f.check_box :flat_roof %>
+  </div>
+  <div class="field">
+    <%= f.label :flat_roof_percentage %><br>
+    <%= f.number_field :flat_roof_percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :additional_info %><br>
+    <%= f.text_field :additional_info %>
+  </div>
+  <div class="field">
+    <%= f.label :original_price %><br>
+    <%= f.text_field :original_price %>
+  </div>
+  <div class="field">
+    <%= f.label :purchase_date %><br>
+    <%= f.date_select :purchase_date %>
+  </div>
+  <div class="field">
+    <%= f.label :rebuild_value %><br>
+    <%= f.text_field :rebuild_value %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

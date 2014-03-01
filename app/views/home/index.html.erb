@@ -1,0 +1,22 @@
+<ul class="table table-hover small-offset-9">
+  <table>
+    <tr>
+        <th>Address</th>
+        <th>Price Bought</th>
+        <th>Date Purchased</th>
+    </tr>
+
+    <% @buildings.each do |building| %>
+      <tr>
+        <td><% if building.flat_no != "" %>
+              <%= link_to building.flat_no + "/" + building.house_no + " " + building.street, edit_building_path(building) %>
+            <% else %>
+              <%= link_to building.house_no + " " + building.street, edit_building_path(building) %>
+            <% end %>
+        </td>        
+        <td>£<%= number_with_precision(building.original_price, :precision => 2, :delimiter => ",")  %></td>
+        <td><%= building.purchase_date.to_s(:long_ordinal) %></td>
+      </tr> 
+  <% end %>
+ </table>
+</ul>
