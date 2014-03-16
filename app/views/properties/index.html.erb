@@ -14,7 +14,7 @@
   <tbody>
     <% @properties.each do |property| %>
       <tr>
-        <td><% if property.flat_no != ""%><%= property.flat_no.to_s + "/"%><% end %>
+        <td><% if property.flat_no %><%= property.flat_no.to_s + "/"%><% end %>
             <%= property.house_no.to_s %> <%= property.street %>,
             <% if property.address != ""%> <%= property.address %>,<% end %>
             <%= property.city %>, <%= property.postcode %>

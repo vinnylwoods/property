@@ -8,7 +8,7 @@
 
     <% @properties.each do |property| %>
       <tr>
-        <td><% if property.flat_no != "" %>
+        <td><% if property.flat_no %>
               <%= link_to property.flat_no.to_s + "/" + property.house_no.to_s + " " + property.street, edit_property_path(property) %>
             <% else %>
               <%= link_to property.house_no + " " + property.street, edit_property_path(property) %>
