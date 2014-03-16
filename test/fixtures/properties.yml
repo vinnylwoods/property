@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  flat_no: MyString
+  flat_no: 1
   house_name: MyString
   house_no: MyString
   street: MyString
@@ -15,11 +15,12 @@ one:
   flat_roof_percentage: 1
   additional_info: MyString
   original_price: 9.99
-  purchase_date: 2014-02-24
+  purchase_date: 2014-03-10
   rebuild_value: 9.99
+  build_date: 1
 
 two:
-  flat_no: MyString
+  flat_no: 1
   house_name: MyString
   house_no: MyString
   street: MyString
@@ -33,5 +34,6 @@ two:
   flat_roof_percentage: 1
   additional_info: MyString
   original_price: 9.99
-  purchase_date: 2014-02-24
+  purchase_date: 2014-03-10
   rebuild_value: 9.99
+  build_date: 1

@@ -1,0 +1,93 @@
+<ul class="form-control">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Flat no:</strong>
+  <%= @property.flat_no %>
+</p>
+
+<p>
+  <strong>House name:</strong>
+  <%= @property.house_name %>
+</p>
+
+<p>
+  <strong>House no:</strong>
+  <%= @property.house_no %>
+</p>
+
+<p>
+  <strong>Street:</strong>
+  <%= @property.street %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @property.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @property.city %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @property.postcode %>
+</p>
+
+<p>
+  <strong>Property type:</strong>
+  <%= @property.property_type_id %>
+</p>
+
+<p>
+  <strong>No of beds:</strong>
+  <%= @property.no_of_beds %>
+</p>
+
+<p>
+  <strong>Building materials:</strong>
+  <%= @property.building_materials %>
+</p>
+
+<p>
+  <strong>Flat roof:</strong>
+  <%= @property.flat_roof %>
+</p>
+
+<p>
+  <strong>Flat roof percentage:</strong>
+  <%= @property.flat_roof_percentage %>
+</p>
+
+<p>
+  <strong>Additional info:</strong>
+  <%= @property.additional_info %>
+</p>
+
+<p>
+  <strong>Original price:</strong>
+  <%= @property.original_price %>
+</p>
+
+<p>
+  <strong>Purchase date:</strong>
+  <%= @property.purchase_date %>
+</p>
+
+<p>
+  <strong>Rebuild value:</strong>
+  <%= @property.rebuild_value %>
+</p>
+
+<p>
+  <strong>Build date:</strong>
+  <%= @property.build_date %>
+</p>
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>
+
+</ul>

@@ -1,0 +1,32 @@
+<ul_class="subheader"><h1>Properties</h1></ul>
+
+<ul class="columns large-9">
+<table>
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><% if property.flat_no != ""%><%= property.flat_no.to_s + "/"%><% end %>
+            <%= property.house_no.to_s %> <%= property.street %>,
+            <% if property.address != ""%> <%= property.address %>,<% end %>
+            <%= property.city %>, <%= property.postcode %>
+        </td>        
+        <td><%= link_to 'Show', property %></td>
+        <td><%= link_to 'Edit', edit_property_path(property) %></td>
+        <td><%= link_to 'Delete', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</ul>
+<br>
+
+<%= link_to 'New Property', new_property_path %>

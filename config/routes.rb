@@ -1,8 +1,8 @@
-Property::Application.routes.draw do
+Manager::Application.routes.draw do
   resources :property_types
 
-  resources :buildings
-
+  resources :properties
+  
   #get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

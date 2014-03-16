@@ -1,4 +1,4 @@
-<ul class="table table-hover small-offset-9">
+<ul class="table table-hover small-offset-8">
   <table>
     <tr>
         <th>Address</th>
@@ -6,16 +6,16 @@
         <th>Date Purchased</th>
     </tr>
 
-    <% @buildings.each do |building| %>
+    <% @properties.each do |property| %>
       <tr>
-        <td><% if building.flat_no != "" %>
-              <%= link_to building.flat_no + "/" + building.house_no + " " + building.street, edit_building_path(building) %>
+        <td><% if property.flat_no != "" %>
+              <%= link_to property.flat_no.to_s + "/" + property.house_no.to_s + " " + property.street, edit_property_path(property) %>
             <% else %>
-              <%= link_to building.house_no + " " + building.street, edit_building_path(building) %>
+              <%= link_to property.house_no + " " + property.street, edit_property_path(property) %>
             <% end %>
         </td>        
-        <td>£<%= number_with_precision(building.original_price, :precision => 2, :delimiter => ",")  %></td>
-        <td><%= building.purchase_date.to_s(:long_ordinal) %></td>
+        <td>£<%= number_with_precision(property.original_price, :precision => 2, :delimiter => ",")  %></td>
+        <td><%= property.purchase_date.to_s(:long_ordinal) %></td>
       </tr> 
   <% end %>
  </table>

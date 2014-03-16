@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @buildings = Building.all
+    @properties = Property.all
   end
 end
